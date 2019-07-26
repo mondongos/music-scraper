@@ -31,20 +31,19 @@ describe("Bork Lists", function() {
 
   })
 
-  describe("when reading a note", function() {
+  describe("when reading a bork", function() {
     it("should display list of objects", function() {
       borkList.addNew(bork)
       borkList.addNew(bork2)
-      console.log(borkList.viewBorks())
       expect(borkList.viewBorks()).toEqual("JJ Cale - soundcloud.comEric Clapton - youtube.com")
     })
   })
 
-  describe("when editing a note", function() {
+  describe("when editing a bork", function() {
     // to be completed
   })
 
-  describe("when deleting a note", function() {
+  describe("when deleting a bork", function() {
     // to be completed
   })
 })
