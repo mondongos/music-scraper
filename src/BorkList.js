@@ -16,3 +16,7 @@ BorkList.prototype.viewBorks = function() {
   }
   return text
 }
+
+// BorkList.prototype.createNewBork = function(title, link) {
+//   return new Bork(link, title)
+// }

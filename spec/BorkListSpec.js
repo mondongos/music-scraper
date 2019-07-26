@@ -24,6 +24,7 @@ describe("Bork Lists", function() {
       borkList.addNew(bork)
       expect(borkList._borks[0].link).toEqual("soundcloud.com")
     })
+
   })
 
   describe("when reading a note", function() {
