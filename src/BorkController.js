@@ -14,17 +14,13 @@ BorkController.prototype.addBorkToList = function(link, title) {
 
 BorkController.prototype.createView = function() {
   let newView = new BorkListView(this._borkList)
-  this._htmlList = newView.generateHTML()
+  this._htmlList += newView.generateHTML()
 }
 
 BorkController.prototype.pushBork = function() {
   document.getElementById('app').innerHTML = this._htmlList
 }
 
-var controller = new BorkController();
-controller.createBorkList()
-controller.addBorkToList("youtube.com", "JJ Cale")
-controller.addBorkToList("spotify.com", "Eric Clapton")
-controller.addBorkToList("reddit.com", "ZZ Top")
-controller.createView()
-controller.pushBork()
+function addToPage(singleBork) {
+  document.
+}
